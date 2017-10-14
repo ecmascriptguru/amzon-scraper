@@ -25,6 +25,7 @@ def create_app(config_name="dev"):
     Migrate(app, db)
 
     from .spiders import spiders as spider_app
+    from . import models
 
     app.register_blueprint(spider_app)
 

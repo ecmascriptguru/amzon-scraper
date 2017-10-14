@@ -17,6 +17,8 @@ class CategorySpider(object):
         """)
         if self.client is None:
             self.client = UBrowse()
+        
+        
 
 if __name__ == "__main__":
     spider = CategorySpider()
