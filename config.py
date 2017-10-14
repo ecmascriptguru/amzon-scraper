@@ -1,7 +1,13 @@
+"""
+Basic Configurations
+"""
+
 class Config(object):
     """
-    Configurations
+    docstring for Config
     """
+    def __init__(self):
+        pass
 
 
 class DevelomentConfig(Config):
@@ -13,7 +19,7 @@ class DevelomentConfig(Config):
     SQLALCHEMY_TRACK_MODIFICATIONS = True
     SECRET_KEY = 'dskfjlskdj34985&d8&^'
     SQLALCHEMY_DATABASE_URI = 'mysql://root:@localhost/amazon'
-    CHROME_DRIVER_PATH = 'F:/workspace/Alex Richard/Afaq Khan/amzon-scraper/app/spiders/chrome/chromedriver.exe'
+    CHROME_DRIVER_PATH = 'F:/workspace/chrome/chromedriver.exe'
 
 
 class StagingConfig(Config):

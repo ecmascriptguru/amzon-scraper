@@ -1,3 +1,7 @@
+"""
+docsting for category class
+"""
+
 from selenium_browser import UBrowse
 
 class CategorySpider(object):
