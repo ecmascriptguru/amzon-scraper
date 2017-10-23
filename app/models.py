@@ -11,6 +11,8 @@ class Domain(db.Model):
     __tablename__ = "domains"
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(20), unique=True)
+    book_url = db.Column(db.UnicodeText, default=None)
+    ebook_url = db.Column(db.UnicodeText, default=None)
     categories = db.relationship("Category", backref="categories", lazy="dynamic")
 
     def __repr__(self):
